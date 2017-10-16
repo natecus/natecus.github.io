@@ -5,66 +5,78 @@
         <title>week5-ponder-prove</title>
     </head>
     <body>       
-        <h1>rock list</h1>
-
-        Adams, Bruce
-    <li>Brown, Lee</li>
-
-
-    <li>John</li>
-    <li>Jen</li>
-
-    <li>Green, Linda</li>
-    <li>Jones, Paul</li>
-    <li>Smith, Sue</li>
-
-    <h1>rock recipes</h1>
-
-    html
-    a powdery rock that makes into good stuff
-    <dt>css</dt>
-    <dd>a floury rock that makes the good stuff better</dd>
-
+        <h1 id='rock'>rock list</h1>
+	<ol>
+    	<li>Adams, Bruce</li>
+    	<li>Brown, Lee
+    		<ul>
+				<li>John</li>
+    			<li>Jen</li>
+			</ul>
+		</li>
+    	<li>Green, Linda</li>
+    	<li>Jones, Paul</li>
+    	<li>Smith, Sue</li>
+	</ol>
+    <h1 id='rock-recipes'>rock recipes</h1>
+	<dl>
+    	<dt>html</dt>
+    	<dd>a powdery rock that makes into good stuff</dd>
+    	<dt>css</dt>
+    	<dd>a floury rock that makes the good stuff better</dd>
+	</dl>
 
     <h2>Schedule</h2>
-
-
+	<table>
+	<caption>
     Week5-rockers schedule
-
-
+	</caption>
+	<thead>
     <tr>
-        <th>April thru July</th>
+        <th colspan='7'>April thru July</th>
     </tr>
-
-    <tr><th>Time/Days</th></tr>
-    <tr><td>Class Times</td>
-        Time
+	</thead>
+	<tbody>
+    <tr>
+    	<th colspan='7'>Time/Days</th>
+    </tr>
+    <tr>
+    	<td rowspan='4'>Class Times</td>
+        <th>Time</th>
         <th>Monday</th>
         <th>Tuesday</th>
         <th>Wednesday</th>
         <th>Thursday</th>
-        <th>Friday</th></tr>
-    <td>8:00</td>
-    CIT230
-
-    <td>CIT230</td>
-    <td>&nbsp;</td>
-    <td>CIT230</td></tr>
-<tr><td>9:00</td>
-    <td>CIT245</td>
-    <td>&nbsp;</td>
-    <td>CIT245</td>
-    <td>&nbsp;</td>
-    <td>CIT245</td></tr>
-<tr><td>10:00</td>
-    <td>CIT336</td>
-    <td>&nbsp;</td>
-    <td>CIT336</td>
-    <td>&nbsp;</td>
-    <td>CIT336</td></tr>
+        <th>Friday</th>
+    </tr>
+    <tr>
+    	<td>8:00</td>
+    	<td>CIT230</td>
+		<td>&nbsp;</td>
+    	<td>CIT230</td>
+    	<td>&nbsp;</td>
+    	<td>CIT230</td>
+    </tr>
+	<tr>
+		<td>9:00</td>
+    	<td>CIT245</td>
+    	<td>&nbsp;</td>
+    	<td>CIT245</td>
+    	<td>&nbsp;</td>
+    	<td>CIT245</td>
+    </tr>
+	<tr>
+		<td>10:00</td>
+    	<td>CIT336</td>
+    	<td>&nbsp;</td>
+    	<td>CIT336</td>
+    	<td>&nbsp;</td>
+    	<td>CIT336</td>
+    </tr>
+	</tbody>
 <tfoot>
     <tr>
-        <td>data compiled by &lt;type in your name&gt;</td>
+        <td colspan='7'>data compiled by &lt;type in your name&gt;</td>
     </tr>
 </tfoot>
 </table>
@@ -72,10 +84,10 @@
 <br>
 <br>
 <a href="contact-info.html">Contact Information--from ponder-prove</a><br>
-<a href="contact-info.html">Contact Information--from contact1</a><br>
-<a href="contact-info.html">Contact Information--from contact2</a><br>
-<a href="contact-info.html">Contact Information--from root</a><br>
-top of page<br>
+<a href="../../contact1/contact-info.html">Contact Information--from contact1</a><br>
+<a href="contact2/contact-info.html">Contact Information--from contact2</a><br>
+<a href="../../contact-info.html">Contact Information--from root</a><br>
+<p><a href='#rock-recipes'>go to rock recipes</a></p><br>
 Schedule Assign 5
 </body>
 </html>
