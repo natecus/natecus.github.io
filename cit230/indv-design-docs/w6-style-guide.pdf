@@ -1,0 +1,8 @@
+body-
+	id-main-used for the homepage
+	id-sub-used for pages other than the homepage
+header-
+	id-banner-will be a cool banner with company name
+	id-title-will contain the title of each page, directly under the banner
+nav-links will be laid out horizontaly
+footer-will contain a border and contact info.

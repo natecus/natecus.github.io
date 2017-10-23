@@ -1,0 +1,10 @@
+body{background-color:#404040;}
+body header{background-color:#6DBDD6;}
+/*nav {color:#00ff00;text-indent:50px;}*/
+a:link{color:#B71427;}
+a:visited{color:#FFE658;}
+a:hover{color:#6DBDD6;}
+ol {list-style-type: none;}
+nav ol li{display:inline;text-align:center;width:100%;}
+body p{color:#00ff00}
+body footer{background-color:#6DBDD6;}
