@@ -4,5 +4,7 @@ body-
 header-
 	id-banner-will be a cool banner with company name
 	id-title-will contain the title of each page, directly under the banner
-nav-links will be laid out horizontaly
+	nav-will have all the links for navigating the page and will be laid out across the page
+		and will open windows when hovered over.
+nav-links will be laid out horizontally
 footer-will contain a border and contact info.
