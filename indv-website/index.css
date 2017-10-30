@@ -4,11 +4,29 @@ body header{background-color:#6DBDD6;}
 a:link{color:#B71427;}
 a:visited{color:#FFE658;}
 a:hover{color:#6DBDD6;}
-ol {list-style-type: none;}
+ol{list-style-type: none;}
 nav ol li{display:inline;float:left;width:10%;height:20px;border: solid thin;margin:1%}
 body p{color:#00ff00}
 body footer{background-color:#6DBDD6;}
-footer{position:fixed;bottom:0px;width:100%;border:solid medium black;text-align:center;}
+footer{position:fixed;left:0px;bottom:0px;width:100%;border:solid medium black;text-align:center;}
 #title{font-size:25px;color:#FFE658;}
 #banner{color:#FFE658;}
-ol.products li{float:left;width:25%;height:50%;border:solid thin;font-size:18px; margin-left:10%;margin-right:10%; margin-top:10%;left:10%;top:10%;}
+.container{display: flex; width: 100%; height: 100%; justify-content:flex-start;flex-direction:column;border:solid thin red;}
+.main{width:100%; border:thin solid red;}
+.prod-item{width: 200px;height:50px; margin:10px;border:thin solid;}
+.shirt-item{width: 305px; align-self:center;border:thin solid blue;}
+.buy-container{display:flex; width: 100%; height:100%;justify-content:flex-start;flex-direction:row;;border:solid thin;}
+.buy-item{width:10%; height:10%; margin:5%;border:thin solid;}
+.pic{border:thin blue solid} 
+.price{flex:1;border:thin solid red;}
+.cart-button{flex:1;}
+#shirt {
+		width: 300px;
+        height: 300px;
+        background: url("images/shirt-1-front.jpg") no-repeat;
+        display: inline-block;
+        
+    }
+#shirt:hover {
+        background: url("images/shirt-1-back.jpg") no-repeat;
+    }
