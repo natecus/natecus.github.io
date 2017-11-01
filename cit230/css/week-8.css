@@ -1,6 +1,6 @@
   			/*body {margin:0;background-image:url(../ponder-prove/images/garden.jpg);background-repeat:repeat;background-position:center top;background-attachment:fixed;}*/
 	
-  			header {border:solid thin; line-height:50%;}    
+  			header {border:solid thin red; line-height:50%;}    
             
             nav {color:#00FF00; background-color:rgba(247,209,210,.5);border:solid thin green;text-indent:50px;} 
             nav ol {text-align:center}
