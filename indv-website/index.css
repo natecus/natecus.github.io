@@ -1,4 +1,5 @@
-body{background-color:#404040;}
+body {margin:0;background-image:url(images/wood-background.jpeg);background-repeat:repeat;background-position:center top;background-attachment:fixed;}
+/*body{background-color:#404040;}*/
 header{background-color:#6DBDD6;border:solid medium black;}
 footer{
 		position:fixed;
