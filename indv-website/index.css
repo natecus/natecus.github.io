@@ -12,7 +12,8 @@ footer{
 
 a:link{color:#B71427;}
 a:visited{color:#FFE658;}
-a:hover{color:#6DBDD6;}
+a:hover{color:white;}
+header a:hover{color:#404040;}
 
 nav ol {text-align:center;}
 nav ol li{display:inline;padding:50px;}
