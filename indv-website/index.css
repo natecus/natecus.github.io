@@ -9,7 +9,13 @@ footer{
 		border:solid medium black;
 		text-align:center;background-color:#6DBDD6;}
 /*nav {color:#00ff00;text-indent:50px;}*/
-
+video{
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 30%;
+  height:100%;
+}
 a:link{color:#B71427;}
 a:visited{color:#FFE658;}
 a:hover{color:white;}
@@ -43,3 +49,10 @@ div#left-col{width:45%;height:1000px;float:left;}
 main {width:35%;height:1000px;float:left;}
 
 aside{width:20%;height:1000px;float:left;} 
+
+@media screen and (max-width:600px){
+	aside{width:0%;}
+	nav ol li{padding:0px;}
+	header{background-color:#FFE658;border:solid medium black;}
+	
+}
