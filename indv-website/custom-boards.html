@@ -6,6 +6,20 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<link href="index.css" rel="stylesheet" type="text/css" > 
 	<title>Liberty Longboards</title>
+	<script type="text/javascript">
+		function image(thisImg) {
+    		var img = document.createElement("IMG");
+    		img.src = "images/"+thisImg;
+    		document.getElementById('board-img').appendChild(img);
+    		
+		}
+		
+		if (a == 'tick') {
+    		image('tick.gif');
+		} else {
+    		image('cross.gif');
+		}
+	</script>
 </head>
 
 <body>
@@ -29,7 +43,7 @@
 	</section>
 	<p>The user will</p>
 	<!--Choose design-->
-	<select>
+	<select id='design'>
 		<option value="choose-design">Choose a Design</option>
   		<option value="let-freedom-ring">Let Freedom Ring</option>
   		<option value="independence">Independence</option>
@@ -37,7 +51,7 @@
   		<option value="free-nations">Free Nations</option>
 	</select><br>
 	<!--Choose board-->
-	<select>
+	<select id='board'>
 		<option value="choose-board">Choose a Board</option>
   		<option value="dart">Dart</option>
   		<option value="pintail">Pintail</option>
@@ -45,7 +59,7 @@
   		<option value="drop-through">Drop-Through</option>
 	</select><br>
 	<!--Choose Trucks-->
-	<select>
+	<select id='trucks'>
 		<option value="choose-trucks">Choose Trucks</option>
   		<option value="green">Green</option>
   		<option value="red">Red</option>
@@ -53,13 +67,8 @@
   		<option value="purple">Purple</option>
   		<option value='none'>None</option>
 	</select><br>
-	
-	<ol>
-  		<li><a href="">Pick a board</a></li>
-  		<li><a href=''>Pick a design</a></li>
-  		<li><a href=''>Pick trucks</a></li>
-  		
-  	</ol>
+	<button type='button' onClick='buildBoard()'>Click to preview your board</button>
+	<div id="boardImg"></div>
 	<footer>
 	<p><a href='mailto:nate@libertylongboards.net'>Contact us</a></p>
 	</footer>

@@ -62,3 +62,11 @@
             footer{background-color:#0CF;}
             body {background-color:#DDF; border: 1px solid blue;}
             
+            #panel, #flip{
+            	text-align:center;
+            	background-color:#e5eecc;
+            	border:solid 1px #c3c3c3;
+            }
+            #panel{
+            	display:none;
+            }
