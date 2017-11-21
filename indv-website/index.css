@@ -56,3 +56,24 @@ aside{width:20%;height:1000px;float:left;}
 	header{background-color:#FFE658;border:solid medium black;}
 	
 }
+
+.alert {
+    padding: 20px;
+    background-color: green;
+    color: white;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}

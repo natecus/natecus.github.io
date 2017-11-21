@@ -6,6 +6,33 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<link href="index.css" rel="stylesheet" type="text/css" > 
 	<title>Liberty Longboards</title>
+	<script type='text/javascript'>
+		function odds() {
+			var output = 0;
+			//input
+			
+			var n = prompt('Pick a number greater than 1:');
+			for (var i = 1; i <= n; i+=2){
+				output = output + i;
+				
+				}
+			
+			window.alert('The sum of all the odd integers between 1 and ' + n +' is ' + output);
+		}
+		function enterName(){
+    		var txt;
+    		var person = prompt("Please enter your name:");
+    		return(person);
+		}
+		function addConfirm(){
+			var name = enterName()
+			if (confirm("Add a teal helmet to your cart?") == true) {
+    			window.alert('Ok ' + name + ' we will get it to you shortly!');
+			} else {
+    			window.alert('Alright, '+name+', back to the drawing board.');
+			}
+		}
+	</script>
 </head>
 
 <body id='main'>
@@ -34,10 +61,10 @@
 		</main>
 		<aside>
 		<p>$59.99</p>
-		<button type='button' onclick="alert('One helmet has been added to your cart')">Add to Cart</button>
+		<button type='button' onclick="addConfirm()">Add to Cart (2 functions)</button>
 		</aside>
 	<footer>
-
+	<button type='button' onClick='odds()'>Try this out!</button>
 	<p><a href='mailto:nate@libertylongboards.net'>Contact us</a></p>
 	</footer>
 </body>
