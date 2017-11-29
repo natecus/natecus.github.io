@@ -6,6 +6,15 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<link href="index.css" rel="stylesheet" type="text/css" > 
 	<title>Liberty Longboards</title>
+	<script type='text/javascript'>
+		function addConfirm(){
+			if (confirm("Add a sweet board to your cart?") == true) {
+    			window.alert('Ok, we will get that shipped out shortly to you shortly!');
+			} else {
+    			window.alert("Alright, well let's try this again");
+			}
+		}
+	</script>
 </head>
 
 <body>
@@ -22,13 +31,20 @@
 			</ol>
 		</nav>
 	</header>
-	<main>
+	<div id='left-col'>
 	<p id='title'>Let Freedom Ring Board</p>
-	<img src='images/let-freedom-ring.jpg' alt='let-freedom-ring'/>
 	<p id='disc'>The flag of the United States of America has long been a symbol of freedom for many people who have migrated 
 	from many different countries and countless cultures. Although with that many differences finding common ground can
 	be quite difficult, the flag is something we can all have in common.</p>
+	<p>All boards are shipped with griptape on top but without trucks or wheels.</p>
+	</div>
+	<main>
+	<img src='images/let-freedom-ring.jpg' alt='let-freedom-ring' width='95%'/>
 	</main>
+	<aside>
+		<p>$59.99</p>
+		<button type='button' onclick="addConfirm()">Add to Cart</button>
+	</aside>
 	<footer>
 	<p><a href='mailto:nate@libertylongboards.net'>Contact us</a></p>
 	</footer>

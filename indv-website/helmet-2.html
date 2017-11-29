@@ -6,6 +6,15 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<link href="index.css" rel="stylesheet" type="text/css" > 
 	<title>Liberty Longboards</title>
+	<script type='text/javascript'>
+		function addConfirm(){
+			if (confirm("Add a black helmet to your cart?") == true) {
+    			window.alert('Ok, we will get that shipped out shortly to you shortly!');
+			} else {
+    			window.alert("Alright, well let's try this again");
+			}
+		}
+	</script>
 </head>
 
 <body id='main'>
@@ -34,7 +43,7 @@
 		</main>
 		<aside>
 		<p>$59.99</p>
-		<button type='button' onclick="alert('One helmet has been added to your cart')">Add to Cart</button>
+		<button type='button' onclick="addConfirm()">Add to Cart</button>
 		</aside>
 	<footer>
 

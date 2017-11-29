@@ -7,35 +7,47 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link href="index.css" rel="stylesheet" type="text/css">
     <title>Liberty Longboards</title>
+<script type='text/javascript'>
+		function addConfirm(){
+			if (confirm("Add a hat to your cart?") == true) {
+    			window.alert('Ok, we will get that shipped out shortly to you shortly!');
+			} else {
+    			window.alert("Alright, well let's try this again");
+			}
+		}
+	</script>
 </head>
 
-<body>
-    <header>
-        <h1><a href='../index.html'><img src='images/logo1.png' alt='Our Logo'/></a></h1>
-        <nav>
-            <ol>
-                <li><a href="boards.html">Boards</a>
-                </li>
-                <li><a href="accessories.html">Accessories</a>
-                </li>
-                <li><a href="apparel.html">Apparel</a>
-                </li>
-                <li><a href="protection.html">Protection</a>
-                </li>
-                <li><a href="about-us.html">About Us</a>
-                </li>
-                <li><a href="../cit230-links.html"> CIT230-links (Link)</a>
-                </li>
-            </ol>
-        </nav>
-    </header>
-    <p id='title'>Misc Hat</p>
-    <p id='disc'>I haven't thought of any designs but I will...</p>
-    <footer>
-
-        <p><a href='mailto:nate@libertylongboards.net'>Contact us</a>
-        </p>
-    </footer>
+<body id='main'>
+	<header>
+	<h1><a href='../index.html'><img src='images/logo1.png' alt='Our Logo'/></a></h1>
+	<nav>
+		<ol>
+  			<li><a href="boards.html">Boards</a></li>
+  			<li><a href="accessories.html">Accessories</a></li>
+  			<li><a href="apparel.html">Apparel</a></li>
+  			<li><a href="protection.html">Protection</a></li>
+  			<li><a href="about-us.html">About Us</a></li>
+  			<li><a href="../cit230-links.html"> CIT230-links (Link)</a></li>
+		</ol>
+	</nav>
+	</header>
+		<div id='left-col'>
+		<div>
+			<img src='images/hat-1.jpg' alt='Hat' height='300'>
+		</div>
+		</div>
+		<main>
+		<h1 id='title'>Hat</h1>
+		<p>While you're walking around town you will want to keep the sun out</p>
+		<p>of your eyes, use one of these stylish hats to do the job.</p>
+		</main>
+		<aside>
+		<p>$19.99</p>
+		<button type='button' onclick="addConfirm()">Add to Cart</button>
+		</aside>
+	<footer>
+	<p><a href='mailto:nate@libertylongboards.net'>Contact us</a></p>
+	</footer>
 </body>
-
 </html>

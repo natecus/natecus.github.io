@@ -5,7 +5,27 @@
 	<meta name = 'discription' content ='Liberty Longboards is a custom board manufacturer.' >
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<link href="index.css" rel="stylesheet" type="text/css" > 
-	<title>Boards.html</title>
+	<title>Liberty Longboards</title>
+	<script type='text/javascript'>
+	 function submit(){
+	 	var design = document.getElementById("design").value;
+	 	var size = document.getElementById("size").value;
+	 	var hardness = document.getElementById("hardness").value;
+	 	var message = '';
+	 	if (design == 'choose-design' || size == 'size' || hardness== 'hardness'){
+	 		message = 'Something went wrong, try again.';
+			window.alert(message);
+	 	}else{
+	 		message = "You want the " + design+ " design on some " + size + " " + hardness + " wheels, is that correct?"
+	 		if (confirm(message) == true ) {
+    			window.alert('Ok, we will get that shipped out shortly to you shortly!');
+			} else {
+				window.alert("Alright, well let's try this again");
+			}
+	 	};
+	 	
+	 }
+	</script>
 </head>
 
 <body>
@@ -23,42 +43,59 @@
 		</ol>
 	</nav>
 	</header>
-	<main>
+	<div id='left-col'>
 	<p id='title'>Wheels</p>
 	<p class='disc'>We manufacture our own wheels which gives you an opportunity to choose your color, design, size, and hardness
 		separately, it is just one more way we are trying to help you make your board <b>YOUR</b> board</p>
 	<p class='disc'>All our wheels have a urethane core which provides great wear and also keeps the wheels lightweight. They 
 		also have a square profile to provide more even wear.</p>
-	<!--Choose design-->
-	<select id='design'>
-		<option value="">Choose a Design</option>
-  		<option value=''>not sure</option>
-  		<option value="">something</option>
- 		<option value="">design this </option>
-  		<option value="">misc design</option>
-	</select><br>
+	
 	<!--Choose size-->
 	<p class='info'>Larger wheels have greater top speed but a slower acceleration.<p>
-	<select id='size'>
-		<option value="choose-size">Choose your size</option>
-  		<option value="60mm">60mm</option>
-  		<option value="65mm">65mm</option>
- 		<option value="75mm">75mm</option>
-  		<option value="107mm">107mm</option>
-	</select><br>
 	<!--Choose Trucks-->
 	<p class='info'>Harder wheels last longer while softer wheels give more grip, stability, and can make riding on rough surfaces easier.</p>
 	<p class='info'>The higher the number the softer the wheel.</p>
-	<select id='hardness'>
-		<option value="choose-hardness">Choose Hardness</option>
-  		<option value="75a">75a</option>
-  		<option value="78a">78a</option>
- 		<option value="80a">80a</option>
-  		<option value="90a">90a</option>
-	</select><br>
+	
 	<p>We manufacture our own wheels which gives us a unique opportunity to let you submit your own designs for us 
 		to make in the future. Send the design ideas <a href='mailto:designs@libertylongboards.net'>here</a></p>
+	</div>
+	<main style='text-align:center;'>
+	<!--Choose design-->
+		<br><br>
+		<select id='design'>
+			<option value="choose-design">Choose a Design</option>
+  			<option value='Cloud Ride'>Cloud Ride</option>
+  			<option value="Stella">Stella</option>
+ 			<option value="Zig Zag">Zig Zag</option>
+		</select><br><br>
+		<select id='size'>
+			<option value="size">Choose your size</option>
+  			<option value="60mm">60mm</option>
+  			<option value="65mm">65mm</option>
+ 			<option value="75mm">75mm</option>
+  			<option value="107mm">107mm</option>
+		</select><br><br>
+		<select id='hardness'>
+			<option value="hardness">Choose Hardness</option>
+  			<option value="75a">75a</option>
+  			<option value="78a">78a</option>
+ 			<option value="80a">80a</option>
+  			<option value="90a">90a</option>
+		</select><br>
+		<p> All of our wheels are 29.99 a set.</p>
+		<button type='button' onClick='submit()'>Add to Cart
+		<p>Design options</p>
+		<img src='images/cloud-ride.jpg' alt='Hat' height='200'><br>
+		<img src='images/stella.jpeg' alt='Hat' height='200'><br>
+		<img src='images/zig-zag.jpg' alt='Hat' height='200'><br>
+		</button>
 	</main>	
+	<aside id ='quick'>
+		<p>Quick Links</p>
+		<a href="ready-to-ride.html">Get a Ready to Ride Board Now</a>
+		<br>
+		<a href="shirts.html">Check out these awesome shirts</a>
+	</aside>
 	<footer>
 	<p><a href='mailto:nate@libertylongboards.net'>Contact us</a></p>
 	</footer>

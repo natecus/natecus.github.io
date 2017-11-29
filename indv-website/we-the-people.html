@@ -6,6 +6,15 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<link href="index.css" rel="stylesheet" type="text/css" > 
 	<title>Liberty Longboards</title>
+	<script type='text/javascript'>
+		function addConfirm(){
+			if (confirm("Add a sweet board to your cart?") == true) {
+    			window.alert('Ok, we will get that shipped out shortly to you shortly!');
+			} else {
+    			window.alert("Alright, well let's try this again");
+			}
+		}
+	</script>
 </head>
 
 <body>
@@ -22,11 +31,20 @@
 		</ol>
 	</nav>
 	</header>
-	<main>
+	<div id='left-col'>
 	<p id='title'>We the People Board</p>
-	<p id='disc'>This will be a board design with the preamble to the constitution on the bottom and maybe red white and blue grip-tape on top. I dont have any designs yet.</p>
-	</main>
-	<h3>Under the picture of the board I will have a price and some other options for hardware.</h3>
+	<p id='disc'>The founding fathers of this great country wrote "We the People of the United States, in Order to form
+		 a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence, promote the 
+		 general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity,"</p>
+	<p>All boards are shipped with griptape on top but without trucks or wheels.</p>
+	</div>
+	<main>
+		<img src='images/we-the-people.jpg' alt='we-the-people' width='95%'/>
+	</main
+	<aside>
+		<p>$59.99</p>
+		<button type='button' onclick="addConfirm()">Add to Cart</button>
+		</aside>
 	<footer>
 	<p><a href='mailto:nate@libertylongboards.net'>Contact us</a></p>
 	</footer>

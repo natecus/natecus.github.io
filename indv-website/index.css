@@ -47,6 +47,7 @@ p{color:#00ff00}
 div#left-col{width:45%;height:1000px;float:left;}
 
 main {width:35%;height:1000px;float:left;}
+main img{margin-top:5%;}
 
 aside{width:19.5%;height:1000px;float:left;} 
 aside#quick{background-color:#6DBDD6;border:solid medium black; text-align:center;}
@@ -78,3 +79,7 @@ aside#quick{background-color:#6DBDD6;border:solid medium black; text-align:cente
 .closebtn:hover {
     color: black;
 }
+
+#map {
+        height: 100%;
+      }

@@ -6,6 +6,15 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<link href="index.css" rel="stylesheet" type="text/css" > 
 	<title>Liberty Longboards</title>
+	<script type='text/javascript'>
+		function addConfirm(){
+			if (confirm("Add a sweet board to your cart?") == true) {
+    			window.alert('Ok, we will get that shipped out shortly to you shortly!');
+			} else {
+    			window.alert("Alright, well let's try this again");
+			}
+		}
+	</script>
 </head>
 
 <body>
@@ -22,11 +31,18 @@
 		</ol>
 	</nav>
 	</header>
+	<div id='left-col'>
 	<p id='title'>Independence</p>
+	<p id='disc'>The Declaration of independence was the first step towards freedom as</p>
+	<p>All boards are shipped with griptape on top but without trucks or wheels.</p>
+	</div>
 	<main>
-	<p id='disc'>This will be a board design with the declaration on independence on the bottom and maybe red whit and blue grip-tape on top. I dont have any designs yet.</p>
-	</main>
-	<h3>under the picture of the board I will have a price and some other options for hardware.</h3>
+	<img src='images/independence.jpg' alt='let-freedom-ring' width='95%'/>
+	</main
+	<aside>
+		<p>$59.99</p>
+		<button type='button' onclick="addConfirm()">Add to Cart</button>
+	</aside>
 	<footer>
 	<p><a href='mailto:nate@libertylongboards.net'>Contact us</a></p>
 	</footer>
