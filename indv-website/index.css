@@ -19,13 +19,17 @@ video{
 a:link{color:#B71427;}
 a:visited{color:#FFE658;}
 a:hover{color:white;}
-header a:hover{color:#404040;}
+header a:hover, aside a:hover{color:#404040;}
 
-#business{color:#FFE658;}
+#business, #about-us{color:#FFE658;}
+
+
+
 
 nav ol {text-align:center; }
 nav ol li{display:inline;padding:50px;}
 ol{list-style-type:none}
+ul{list-style-type:none}
 .option{font-size:25px;}
 h4{color:#FFE658;}
 p{color:#00ff00}
@@ -46,10 +50,10 @@ p{color:#00ff00}
     
 div#left-col{width:45%;height:1000px;float:left;}
 
-main {width:35%;height:1000px;float:left;}
+main {width:30%;height:1000px;float:left;}
 main img{margin-top:5%;}
 
-aside{width:19.5%;height:1000px;float:left;} 
+aside{width:24.5%;height:1000px;float:left;} 
 aside#quick{background-color:#6DBDD6;border:solid medium black; text-align:center;}
 
 @media screen and (max-width:600px){
