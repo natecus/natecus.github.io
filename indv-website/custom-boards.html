@@ -24,39 +24,39 @@
        		window.alert('Error, try again'); 
     	}else if(design == 'let-freedom-ring'){
     		if(board == 'dart'){
-    			document.getElementById("boardImg").innerHTML = "<img src='images/lfr-Dart.jpg' alt='Let Freedom Ring on a Dart' height='75'>";
+    			document.getElementById("boardImg").innerHTML = "<img id='product' src='images/lfr-Dart.jpg' alt='Let Freedom Ring on a Dart' >";
     		}else if(board == 'pintail'){
-    			document.getElementById("boardImg").innerHTML = "<img src='images/lfr-pintail.jpg' alt='Let Freedom Ring on a Pintail' height='75'>";
+    			document.getElementById("boardImg").innerHTML = "<img id='product' src='images/lfr-pintail.jpg' alt='Let Freedom Ring on a Pintail'>";
     		}else if(board == 'beebop'){
-    			document.getElementById("boardImg").innerHTML = "<img src='images/lfr-beebop.jpg' alt='Let Freedom Ring on a Beebop' height='75'>";
+    			document.getElementById("boardImg").innerHTML = "<img id='product' src='images/lfr-beebop.jpg' alt='Let Freedom Ring on a Beebop'>";
     		}else if(board == 'drop-through'){
-    			document.getElementById("boardImg").innerHTML = "<img src='images/lfr-drop-through.jpg' alt='Let Freedom Ring on a Drop Through' height='75'>";
+    			document.getElementById("boardImg").innerHTML = "<img id='product' src='images/lfr-drop-through.jpg' alt='Let Freedom Ring on a Drop Through'>";
     		}else{
     			error=true;
     			window.alert('Error, try again'); 
     		}
     	}else if(design == 'independence'){
     		if(board == 'dart'){
-    			document.getElementById("boardImg").innerHTML = "<img src='images/ind-dart.jpg' alt='Independence on a Dart' height='75'>";
+    			document.getElementById("boardImg").innerHTML = "<img id='product' src='images/ind-dart.jpg' alt='Independence on a Dart'>";
     		}else if(board == 'pintail'){
-    			document.getElementById("boardImg").innerHTML = "<img src='images/ind-pintail.jpg' alt='Independence on a pintail' height='75'>";
+    			document.getElementById("boardImg").innerHTML = "<img id='product' src='images/ind-pintail.jpg' alt='Independence on a pintail'>";
     		}else if(board == 'beebop'){
-    			document.getElementById("boardImg").innerHTML = "<img src='images/ind-beebop.jpg' alt='Independence on a Beebop' height='75'>";
+    			document.getElementById("boardImg").innerHTML = "<img id='product' src='images/ind-beebop.jpg' alt='Independence on a Beebop'>";
     		}else if(board == 'drop-through'){
-    			document.getElementById("boardImg").innerHTML = "<img src='images/ind-drop-through.jpg' alt='Independence on a Drop Through' height='75'>";
+    			document.getElementById("boardImg").innerHTML = "<img id='product' src='images/ind-drop-through.jpg' alt='Independence on a Drop Through'>";
     		}else{
     			error=true;
     			window.alert('Error, try again'); 
     		}
     	}else if(design == 'we-the-people'){
     		if(board == 'dart'){
-    			document.getElementById("boardImg").innerHTML = "<img src='images/wtp-dart.jpg' alt='We The People on a Dart' height='75'>";
+    			document.getElementById("boardImg").innerHTML = "<img id='product' src='images/wtp-dart.jpg' alt='We The People on a Dart'>";
     		}else if(board == 'pintail'){
-    			document.getElementById("boardImg").innerHTML = "<img src='images/wtp-pintail.jpg' alt='We The People on a pintail' height='75'>";
+    			document.getElementById("boardImg").innerHTML = "<img id='product' src='images/wtp-pintail.jpg' alt='We The People on a pintail'>";
     		}else if(board == 'beebop'){
-    			document.getElementById("boardImg").innerHTML = "<img src='images/wtp-beebop.jpg' alt='We The People on a Beebop' height='75'>";
+    			document.getElementById("boardImg").innerHTML = "<img id='product' src='images/wtp-beebop.jpg' alt='We The People on a Beebop'>";
     		}else if(board == 'drop-through'){
-    			document.getElementById("boardImg").innerHTML = "<img src='images/wtp-drop-through.jpg' alt='We The People on a Drop Through' height='75'>";
+    			document.getElementById("boardImg").innerHTML = "<img id='product' src='images/wtp-drop-through.jpg' alt='We The People on a Drop Through'>";
     		}else{
     			error=true;
     			window.alert('Error, try again');
@@ -101,7 +101,6 @@
   		<option value="let-freedom-ring">Let Freedom Ring</option>
   		<option value="independence">Independence</option>
  		<option value="we-the-people">We the People</option>
-  		<option value="free-nations">Free Nations</option>
 	</select><br>
 	<!--Choose board-->
 	<select id='board'>

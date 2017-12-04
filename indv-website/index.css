@@ -48,6 +48,7 @@ p{color:#00ff00}
 #shirt:hover {
         background: url("images/shirt-1-back.jpg") no-repeat;
     }
+img#product{width:90%}
     
 div#left-col{width:45%;height:1000px;float:left;}
 
