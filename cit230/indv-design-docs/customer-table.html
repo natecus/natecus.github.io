@@ -17,6 +17,7 @@
 		<h3 id='title'>List of businesses that carry our ready to ride boards</h3>
 		<p></p>
 	</section>
+	<div id='left-col'>
 	<table id='business'>
 		<tr>
 			<th>Business Name</th>
@@ -61,39 +62,46 @@
 			<td>83401</td>
 		</tr>
 	</table>
-	<div id='map' style="width:50%;height:300px"></div>
+	</div>
+	<div  id='map' style="width:50%;height:300px"></div>
 	
 	<footer>
 	<h3>At the bottom of the page</h3>
 	<p><a href='mailto:nate@libertylongboards.net'>Contact us</a></p>
 	</footer>
-	 <script>
-	 var geocoder;
-  var map;
-  function initialize() {
-    geocoder = new google.maps.Geocoder();
-    var latlng = new google.maps.LatLng(-34.397, 150.644);
-    var mapOptions = {
-      zoom: 8,
-      center: latlng
-    }
-    map = new google.maps.Map(document.getElementById('map'), mapOptions);
-  }
+	  <script>
+                function myMap() {
+                    var myCenter = new google.maps.LatLng(43.8231096, -111.79242369999997);
+                    var mapCanvas =document.getElementById('map');
+                    var mapOptions = {
 
-  function codeAddress() {
-    var address = document.getElementById('address').value;
-    geocoder.geocode( { 'address': address}, function(results, status) {
-      if (status == 'OK') {
-        map.setCenter(results[0].geometry.location);
-        var marker = new google.maps.Marker({
-            map: map,
-            position: results[0].geometry.location
-        });
-      } else {
-        alert('Geocode was not successful for the following reason: ' + status);
-      }
-    });
-  }
-  </script>
+                                center: new google.maps.LatLng(43.8231096, -111.79242369999997),
+                                zoom: 5,
+                                panControl: true,
+                                zoomControl: true,
+                                mapTypeControl: true,
+                                scaleControl: true,
+                                streetViewControl: true,
+                                overviewMapControl: true,
+                                rotateControl: true
+                            };
+                    var map = new google.maps.Map(mapCanvas, mapOptions);
+                    var marker =new google.maps.Marker({position: myCenter});
+                	marker.setMap(map);
+
+
+                // Zoom to 9 when clicking on marker
+                google.maps.event.addListener(marker, 'click', function () {
+                        var pos =map.getZoom()
+                        map.setZoom(9);
+                        map.setCenter(marker.getPosition());
+                        window.setTimeout(function() {
+                            map.setZoom(pos);
+                        }, 3000);
+                });
+                }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBp8BHS7EaBUzeF61QTdD3Lt7bZttItcAw&callback=myMap" ></script>
+
 </body>
 </html>
