@@ -57,7 +57,7 @@ main img{margin-top:5%;}
 
 aside{width:24.5%;height:1000px;float:left;} 
 /*aside#quick{background-color:#6DBDD6;border:solid medium black; text-align:center;}*/
-aside#quick {position: fixed; margin-left: 75%;background-color:#6DBDD6;border:solid medium black; text-align:center; height:20%}
+aside#quick {position: fixed; margin-left: 75%;background-color:#6DBDD6;border:solid medium black; text-align:center; height:20%;line-height:25px;}
 aside#about{position: fixed; margin-left: 75%;background-color:#6DBDD6;border:solid medium black; text-align:center; height:35%}
 #quick a, #quick p{vertical-align:center;}
 
