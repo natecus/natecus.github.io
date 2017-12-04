@@ -37,8 +37,8 @@ p{color:#00ff00}
 #title{font-size:25px;color:#FFE658;}
 #banner{color:#FFE658;}
 #shirt {
-		width: 300px;
-        height: 300px;
+		width: 400px;
+        height: 400px;
         background: url("images/shirt-1-front.jpg") no-repeat;
         display:inline-block;
         margin:10%;
@@ -48,7 +48,7 @@ p{color:#00ff00}
 #shirt:hover {
         background: url("images/shirt-1-back.jpg") no-repeat;
     }
-img#product{width:90%}
+img#product{width:90%; margin:5%;}
     
 div#left-col{width:45%;height:1000px;float:left;}
 
@@ -57,7 +57,8 @@ main img{margin-top:5%;}
 
 aside{width:24.5%;height:1000px;float:left;} 
 /*aside#quick{background-color:#6DBDD6;border:solid medium black; text-align:center;}*/
-aside#quick {position: fixed; margin-left: 75%;background-color:#6DBDD6;border:solid medium black; text-align:center; height:40%}
+aside#quick {position: fixed; margin-left: 75%;background-color:#6DBDD6;border:solid medium black; text-align:center; height:20%}
+aside#about{position: fixed; margin-left: 75%;background-color:#6DBDD6;border:solid medium black; text-align:center; height:35%}
 #quick a, #quick p{vertical-align:center;}
 
 
