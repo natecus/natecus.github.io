@@ -11,95 +11,122 @@
 
 <body>
 	<header>
-		<h1><a href='../../index.html'>Banner</a></h1>
+		<h1><a href='../../index.html'><img src='../../indv-website/images/logo1.png' alt='Our Logo'/></a></h1>
+		<nav>
+			<ol>
+  				<li><a href="boards.html">Boards</a></li>
+ 	 			<li><a href="accessories.html">Accessories</a></li>
+  				<li><a href="apparel.html">Apparel</a></li>
+  				<li><a href="protection.html">Protection</a></li>
+  				<li><a href="about-us.html">About Us</a></li>
+  				<li><a href="../cit230-links.html"> CIT230-links (Link)</a></li>
+			</ol>
+		</nav>
 	</header>
-	<section>
-		<h3 id='title'>List of businesses that carry our ready to ride boards</h3>
-		<p></p>
-	</section>
 	<div id='left-col'>
-	<table id='business'>
-		<tr>
-			<th>Business Name</th>
-			<th>Street Address</th>
-			<th>City</th>
-			<th>State</th>
-			<th>Zip Code</th>
-		</tr>
-		<tr>
-			<td>Sticks and Stones</td>
-			<td>49 E Main St</td>
-			<td>Rexburg</td>
-			<td>Idaho</td>
-			<td>83440</td>
-		</tr>
-		<tr>
-			<td>Zumies</td>
-			<td>2300 E 17th St</td>
-			<td>Idaho Falls</td>
-			<td>Idaho</td>
-			<td>83401</td>
-		</tr>
-		<tr>
-			<td>Big 5 Sports</td>
-			<td>650 N 2nd E</td>
-			<td>Rexburg</td>
-			<td>Idaho</td>
-			<td>83440</td>
-		</tr>
-		<tr>
-			<td>Teton Board Sports</td>
-			<td>432 Farnsworth Way</td>
-			<td>Rigby</td>
-			<td>Idaho</td>
-			<td>83442</td>
-		</tr>
-		<tr>
-			<td>The Nayborhood</td>
-			<td>2300 E 17th St #1122</td>
-			<td>Idaho Falls</td>
-			<td>Idaho</td>
-			<td>83401</td>
-		</tr>
-	</table>
+		<section>
+			<h3 id='title'>List of businesses that carry our ready to ride boards</h3>
+			<p></p>
+		</section>
+		<table id='business'>
+			<tr>
+				<th>Business Name</th>
+				<th>Street Address</th>
+				<th>City</th>
+				<th>State</th>
+				<th>Zip Code</th>
+			</tr>
+			<tr>
+				<td>Sticks and Stones</td>
+				<td>49 E Main St</td>
+				<td>Rexburg</td>
+				<td>Idaho</td>
+				<td>83440</td>
+			</tr>
+			<tr>
+				<td>Zumies</td>
+				<td>2300 E 17th St</td>
+				<td>Idaho Falls</td>
+				<td>Idaho</td>
+				<td>83401</td>
+			</tr>
+			<tr>
+				<td>Big 5 Sports</td>
+				<td>650 N 2nd E</td>
+				<td>Rexburg</td>
+				<td>Idaho</td>
+				<td>83440</td>
+			</tr>
+			<tr>
+				<td>Teton Board Sports</td>
+				<td>432 Farnsworth Way</td>
+				<td>Rigby</td>
+				<td>Idaho</td>
+				<td>83442</td>
+			</tr>
+			<tr>
+				<td>The Nayborhood</td>
+				<td>2300 E 17th St #1122</td>
+				<td>Idaho Falls</td>
+				<td>Idaho</td>
+				<td>83401</td>
+			</tr>
+		</table>
 	</div>
-	<div  id='map' style="width:50%;height:300px"></div>
+	<main  id='map' style="width:30%;height:300px"></main>
+	<aside id='quick'>
+		<p>Quick Links</p>
+		<a href="ready-to-ride.html">Get a Ready to Ride Board Now</a>
+		<br>
+		<a href="shirts.html">Check out these awesome shirts</a>
+	</aside>
 	
 	<footer>
 	<h3>At the bottom of the page</h3>
 	<p><a href='mailto:nate@libertylongboards.net'>Contact us</a></p>
 	</footer>
-	  <script>
-                function myMap() {
-                    var myCenter = new google.maps.LatLng(43.8231096, -111.79242369999997);
-                    var mapCanvas =document.getElementById('map');
-                    var mapOptions = {
+	<script type="text/javascript" src='../ponder-prove/businesses.json'></script>
+	<script>
+            function myMap() {
+    	        var myCenter = new google.maps.LatLng(43.8231096, -111.79242369999997);
+                var mapCanvas =document.getElementById('map');
+	            var mapOptions = {
 
-                                center: new google.maps.LatLng(43.8231096, -111.79242369999997),
-                                zoom: 5,
-                                panControl: true,
-                                zoomControl: true,
-                                mapTypeControl: true,
-                                scaleControl: true,
-                                streetViewControl: true,
-                                overviewMapControl: true,
-                                rotateControl: true
-                            };
-                    var map = new google.maps.Map(mapCanvas, mapOptions);
-                    var marker =new google.maps.Marker({position: myCenter});
-                	marker.setMap(map);
+                	center: new google.maps.LatLng(43.8231096, -111.79242369999997),
+                    zoom: 5,
+                    panControl: true,
+                    zoomControl: true,
+                    mapTypeControl: true,
+                    scaleControl: true,
+                    streetViewControl: true,
+                    overviewMapControl: true,
+                    rotateControl: true
+                };
+                var map = new google.maps.Map(mapCanvas, mapOptions);
+                var marker =new google.maps.Marker({position: myCenter});
+                marker.setMap(map);
 
 
                 // Zoom to 9 when clicking on marker
                 google.maps.event.addListener(marker, 'click', function () {
-                        var pos =map.getZoom()
-                        map.setZoom(9);
-                        map.setCenter(marker.getPosition());
-                        window.setTimeout(function() {
-                            map.setZoom(pos);
-                        }, 3000);
+                	var pos = map.getZoom()
+                	map.setZoom(9);
+                	map.setCenter(marker.getPosition());
+                	window.setTimeout(function() {
+                		map.setZoom(pos);
+                		}, 3000);
                 });
-                }
+                var mydata = JSON.parse(data);
+
+			for(x=0; x<mydata.length; x++){
+				let marker = new google.maps.Marker({
+					map: map,
+					position: new google.maps.LatLng(mydata[x].location[0],mydata[x].location[1]),
+					title: mydata[x].name
+                })
+            }
+                
+            }
         </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBp8BHS7EaBUzeF61QTdD3Lt7bZttItcAw&callback=myMap" ></script>
 
