@@ -1,133 +1,175 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta name ='keywords' content ='longboards, skateboards, trucks, wheels, bearings, custom'>
-	<meta name = 'discription' content ='Liberty Longboards is a custom board manufacturer.' >
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link href="../../indv-website/index.css" rel="stylesheet" type="text/css" > 
-	<title>Liberty Longboards</title>
-	 
+    <meta name='keywords' content='longboards, skateboards, trucks, wheels, bearings, custom'>
+    <meta name='discription' content='Liberty Longboards is a custom board manufacturer.'>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="../../indv-website/index.css" rel="stylesheet" type="text/css">
+    <title>Liberty Longboards</title>
+
 </head>
 
 <body>
-	<header>
-		<h1><a href='../../index.html'><img src='../../indv-website/images/logo1.png' alt='Our Logo'/></a></h1>
-		<nav>
-			<ol>
-  				<li><a href="../../indv-website/boards.html">Boards</a></li>
- 	 			<li><a href="../../indv-website/accessories.html">Accessories</a></li>
-  				<li><a href="../../indv-website/apparel.html">Apparel</a></li>
-  				<li><a href="../../indv-website/protection.html">Protection</a></li>
-  				<li><a href="../../indv-website/about-us.html">About Us</a></li>
-  				<li><a href="../../cit230-links.html"> CIT230-links (Link)</a></li>
-			</ol>
-		</nav>
-	</header>
-	<div id='left-col'>
-		<section>
-			<h3 id='title'>List of businesses that carry our ready to ride boards</h3>
-			<p></p>
-		</section>
-		<table id='business'>
-			<tr>
-				<th>Business Name</th>
-				<th>Street Address</th>
-				<th>City</th>
-				<th>State</th>
-				<th>Zip Code</th>
-			</tr>
-			<tr>
-				<td>Sticks and Stones</td>
-				<td>49 E Main St</td>
-				<td>Rexburg</td>
-				<td>Idaho</td>
-				<td>83440</td>
-			</tr>
-			<tr>
-				<td>Zumies</td>
-				<td>2300 E 17th St</td>
-				<td>Idaho Falls</td>
-				<td>Idaho</td>
-				<td>83401</td>
-			</tr>
-			<tr>
-				<td>Big 5 Sports</td>
-				<td>650 N 2nd E</td>
-				<td>Rexburg</td>
-				<td>Idaho</td>
-				<td>83440</td>
-			</tr>
-			<tr>
-				<td>Teton Board Sports</td>
-				<td>432 Farnsworth Way</td>
-				<td>Rigby</td>
-				<td>Idaho</td>
-				<td>83442</td>
-			</tr>
-			<tr>
-				<td>The Nayborhood</td>
-				<td>2300 E 17th St #1122</td>
-				<td>Idaho Falls</td>
-				<td>Idaho</td>
-				<td>83401</td>
-			</tr>
-		</table>
-	</div>
-	<main  id='map' style="width:30%;height:300px"></main>
-	<aside id='quick'>
-		<p>Quick Links</p>
-		<a href="../../indv-website/ready-to-ride.html">Get a Ready to Ride Board Now</a>
-		<br>
-		<a href="../../indv-website/shirts.html">Check out these awesome shirts</a>
-	</aside>
-	
-	<footer>
-	<p><a href='mailto:nate@libertylongboards.net'>Contact us</a></p>
-	</footer>
-	<script type="text/javascript" src='../ponder-prove/businesses.json'></script>
-	<script>
-            function myMap() {
-    	        var myCenter = new google.maps.LatLng(43.8231096, -111.79242369999997);
-                var mapCanvas =document.getElementById('map');
-	            var mapOptions = {
+    <header>
+        <h1><a href='../../index.html'><img src='../../indv-website/images/logo1.png' alt='Our Logo'/></a></h1>
+        <nav>
+            <ol>
+                <li><a href="../../indv-website/boards.html">Boards</a>
+                </li>
+                <li><a href="../../indv-website/accessories.html">Accessories</a>
+                </li>
+                <li><a href="../../indv-website/apparel.html">Apparel</a>
+                </li>
+                <li><a href="../../indv-website/protection.html">Protection</a>
+                </li>
+                <li><a href="../../indv-website/about-us.html">About Us</a>
+                </li>
+                <li><a href="../../cit230-links.html"> CIT230-links (Link)</a>
+                </li>
+            </ol>
+        </nav>
+    </header>
+    <div id='left-col'>
+        <section>
+            <h3 id='title'>List of businesses that carry our ready to ride boards</h3>
+            <p></p>
+        </section>
+        <table id='business'>
+            <tr>
+                <th>Business Name</th>
+                <th>Street Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Zip Code</th>
+            </tr>
+            <tr>
+                <td>Sticks and Stones</td>
+                <td>49 E Main St</td>
+                <td>Rexburg</td>
+                <td>Idaho</td>
+                <td>83440</td>
+            </tr>
+            <tr>
+                <td>Zumies</td>
+                <td>2300 E 17th St</td>
+                <td>Idaho Falls</td>
+                <td>Idaho</td>
+                <td>83401</td>
+            </tr>
+            <tr>
+                <td>Big 5 Sports</td>
+                <td>650 N 2nd E</td>
+                <td>Rexburg</td>
+                <td>Idaho</td>
+                <td>83440</td>
+            </tr>
+            <tr>
+                <td>Teton Board Sports</td>
+                <td>432 Farnsworth Way</td>
+                <td>Rigby</td>
+                <td>Idaho</td>
+                <td>83442</td>
+            </tr>
+            <tr>
+                <td>The Nayborhood</td>
+                <td>2300 E 17th St #1122</td>
+                <td>Idaho Falls</td>
+                <td>Idaho</td>
+                <td>83401</td>
+            </tr>
+        </table>
+    </div>
+    <main id='map' style="width:30%;height:300px"></main>
+    <aside id='quick'>
+        <p>Quick Links</p>
+        <a href="../../indv-website/ready-to-ride.html">Get a Ready to Ride Board Now</a>
+        <br>
+        <a href="../../indv-website/shirts.html">Check out these awesome shirts</a>
+    </aside>
 
-                	center: new google.maps.LatLng(43.8231096, -111.79242369999997),
-                    zoom: 5,
-                    panControl: true,
-                    zoomControl: true,
-                    mapTypeControl: true,
-                    scaleControl: true,
-                    streetViewControl: true,
-                    overviewMapControl: true,
-                    rotateControl: true
-                };
-                var map = new google.maps.Map(mapCanvas, mapOptions);
-                var marker =new google.maps.Marker({position: myCenter});
-                marker.setMap(map);
+    <footer>
+        <p><a href='mailto:nate@libertylongboards.net'>Contact us</a>
+        </p>
+    </footer>
+    <script type="text/javascript" src='../ponder-prove/businesses.json'></script>
+    <script>
+        function myMap() {
+            var mapCanvas = document.getElementById('map');
+            var mapOptions = {
 
+                center: new google.maps.LatLng(43.8231096, -111.79242369999997),
+                zoom: 5,
+                panControl: true,
+                zoomControl: true,
+                mapTypeControl: true,
+                scaleControl: true,
+                streetViewControl: true,
+                overviewMapControl: true,
+                rotateControl: true
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            var infoWindow = new google.maps.InfoWindow;
 
-                // Zoom to 9 when clicking on marker
-                google.maps.event.addListener(marker, 'click', function () {
-                	var pos = map.getZoom()
-                	map.setZoom(9);
-                	map.setCenter(marker.getPosition());
-                	window.setTimeout(function() {
-                		map.setZoom(pos);
-                		}, 3000);
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    var pos = {
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                    };
+                    infoWindow.setPosition(pos);
+                    infoWindow.setContent('Location found.');
+                    infoWindow.open(map);
+                    map.setCenter(pos);
+                    var myCenter = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+                    var marker = new google.maps.Marker({
+                        position: myCenter
+                    });
+                    marker.setMap(map);
+                    google.maps.event.addListener(marker, 'click', function () {
+                        var pos = map.getZoom()
+                        map.setZoom(9);
+                        map.setCenter(marker.getPosition());
+                    });
+                }, function () {
+                    handleLocationError(true, infoWindow, map.getCenter());
                 });
-                var mydata = JSON.parse(data);
+            } else {
+                // Browser doesn't support Geolocation
+                handleLocationError(false, infoWindow, map.getCenter());
+            }
 
-			for(x=0; x<mydata.length; x++){
-				let marker = new google.maps.Marker({
-					map: map,
-					position: new google.maps.LatLng(mydata[x].location[0],mydata[x].location[1]),
-					title: mydata[x].name
+
+
+            // Zoom to 9 when clicking on marker
+
+            var mydata = JSON.parse(data);
+
+            for (x = 0; x < mydata.length; x++) {
+                let marker = new google.maps.Marker({
+                    map: map,
+                    position: new google.maps.LatLng(mydata[x].location[0], mydata[x].location[1]),
+                    title: mydata[x].name
                 })
+                google.maps.event.addListener(marker, 'click', function () {
+                    var pos = map.getZoom()
+                    map.setZoom(9);
+                    map.setCenter(marker.getPosition());
+                });
             }
-                
-            }
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBp8BHS7EaBUzeF61QTdD3Lt7bZttItcAw&callback=myMap" ></script>
+
+        }
+
+        function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+            infoWindow.setPosition(pos);
+            infoWindow.setContent(browserHasGeolocation ?
+                'Error: The Geolocation service failed.' :
+                'Error: Your browser doesn\'t support geolocation.');
+            infoWindow.open(map);
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBp8BHS7EaBUzeF61QTdD3Lt7bZttItcAw&callback=myMap"></script>
 
 </body>
+
 </html>
