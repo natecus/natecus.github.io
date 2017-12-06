@@ -54,6 +54,7 @@ div#left-col{width:45%;height:1000px;float:left;}
 
 main {width:30%;height:1000px;float:left;}
 main img{margin-top:5%;}
+main#home{width:75%}
 
 aside{width:24.5%;height:1000px;float:left;} 
 /*aside#quick{background-color:#6DBDD6;border:solid medium black; text-align:center;}*/
