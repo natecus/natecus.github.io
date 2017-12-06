@@ -167,6 +167,15 @@
                 'Error: Your browser doesn\'t support geolocation.');
             infoWindow.open(map);
         }
+        if (navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(function (position) {
+                	var pos = {
+                    	lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                    };
+                	console.log(pos);
+                });
+        }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBp8BHS7EaBUzeF61QTdD3Lt7bZttItcAw&callback=myMap"></script>
 
